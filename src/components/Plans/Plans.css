@@ -1,0 +1,88 @@
+.plans-container{
+    margin-top: 4rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+}
+.blur-p-1{
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0rem;
+}
+.blur-p-2{
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    right: 0rem;
+}
+.all-plans{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.each-plan{
+    display: flex;
+    flex-direction: column;
+    background: var(--caloryCard);
+    color: white;
+    gap: 1rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    width: 24rem;
+    background: grey;
+}
+/* .each-plan:nth-child(1){
+    background: grey;
+}
+.each-plan:nth-child(3){
+    background: grey;
+} */
+.price{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.each-plan:nth-child(2){
+    /* background: var(--planCard); */
+    transform: scale(1);
+    /* font-size: 1rem; */
+    /* font-weight: bold; */
+}
+.each-plan:hover{
+    background: var(--planCard);
+    transform: scale(1.1);
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* .each-plan:nth-child(2)>svg{
+    fill: black;
+} */
+.each-plan>svg{
+    fill: black;
+    width: 5rem;
+    height: 2rem;
+}
+.features{
+    display: flex;
+    gap: 1rem;
+}
+.features>img{
+    width: 1rem;
+}
+.btn-p{
+    color: black;
+}
+@media screen and (max-width: 768px){
+    .all-plans{
+        flex-direction: column;
+    }
+    .each-plan:nth-child(2){
+        background: grey;
+        transform: none;
+    }
+    
+}
+
